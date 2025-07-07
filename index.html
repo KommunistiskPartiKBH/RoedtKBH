@@ -6,6 +6,7 @@
   <meta property="og:title" content="Kommunistisk Parti København">
   <meta property="og:description" content="Find vores politik til KMV2025 her!">
   <meta property="og:url" content="https://rødtkbh.dk">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -108,6 +109,32 @@
       ol li {
       margin-bottom: 1.5rem;
     }
+    .social-float {
+  position: fixed;
+  top: 90%;
+  right: 5px; /* or left: 10px; to move it to the left */
+  transform: translateY(-50%);
+  background-color: var(--party-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.social-float a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.social-float a:hover {
+  opacity: 0.7;
+}
 </style>
 </head>
 <body>
@@ -369,6 +396,21 @@ Ved at integrere kunstig intelligens i administrative opgaver kan kommunen øge 
     </section>
   </div>
 
+<div class="social-float">
+  <a href="https://www.facebook.com/kbh.kommunister.dk" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/kommunistiskparti_kbh" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+  <script>
+    function toggleText(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
   <footer>
     &copy; 2025 Kommunistisk Parti København
