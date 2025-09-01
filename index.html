@@ -72,12 +72,13 @@
     }
 
     .parallax {
+      background-color: var(white); 
       background-image: url('partylogo.png'); /* Replace with your transparent logo */
       min-height: 100vh;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -85,14 +86,15 @@
     }
 
     section {
-      max-width: 800px;
-      margin: 8rem auto;
+      max-width: 70%;
+      margin: 10rem auto;
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       padding: 2rem;
       position: relative;
       z-index: 1;
+      
     }
 
     .section-title {
@@ -155,6 +157,9 @@
       <a href="#solidaritet">Global Solidaritet</a>
       <a href="#digitalisering">Digitalisering</a>
       <a href="#diverse">Diverse</a>
+      <a href="#omkp">Om Kommunistisk Parti</a>
+      <a href="#kandidater">Kandidater</a>
+
     </nav>
   </header>
 
@@ -188,7 +193,7 @@
       <p>København er en rig by med en kassebeholdning på omkring 17 milliarder kroner. Alligevel oplever københavnerne hvert år nedskæringer og forringelser på mange områder. Det skyldes det stramme budgetregime, som skiftende regeringer har lagt ned over kommunerne. Kommunistisk Parti vil bekæmpe, omgå og afskaffe den nyliberale økonomiske styring af byens økonomi.</p>
       <ol>
     <li><strong>Serviceloftet begrænser velfærden</strong><br>
-Hvert år beslutter et flertal i Folketinget, hvad loftet over kommunernes driftsudgifter årligt skal være de næste fire år. De fire-årige budgetlofter er en konsekvens af budgetloven, som blev besluttet i 2012.
+Hvert år beslutter et flertal i Folketinget, hvad loftet over kommunernes driftsudgifter årligt skal være de næste fire år. De fire-årige budgetlofter er en konsekvens af budgetloven, som blev besluttet i 2012 som følge af Danmarks tilslutning til EU's Finanspagt.
 Indenfor de rammer, som loftet over de samlede driftsudgifter udstikker, fastlægges de årlige lofter over kommunernes borgerrettede serviceudgifter hvert år i økonomiaftalen mellem Kommunernes Landsforening og regeringen. Det vil sige udgifter til driften af blandt andet plejehjem, folkeskoler, børnehaver og bosteder til mennesker med handicap. 
 Overtræder kommunerne det dikterede loft over serviceudgifterne, bliver de straffet økonomisk ved at få trukket i deres bloktilskud. Det rammer både de kommuner, der overskrider servicerammen, men der er samtidig en kollektiv straf af alle kommuner.
 Skattestoppet betyder desuden, at kommunerne ikke bare kan hæve skatten. Det kræver, at andre kommuner sætter skatten tilsvarende ned, ellers straffes alle kommuner på pengepungen.
@@ -200,7 +205,7 @@ For at sikre penge til nye tiltag gennemfører Københavns Kommune hvert år en 
 Hvert år fastlægger regeringen i økonomiaftalen med Kommunernes Landsforening, hvor meget kommunerne må bruge i anlægsudgifter det kommende år. En af konsekvenserne er, at kommunerne ikke kan gennemføre alle de klima- og energirenoveringer, som der er behov for. Det er vanvid og må stoppes. Der skal være mulighed for langsigtet planlægning.    </li>
     <li><strong>Et kommunalt oprør mod budgetloven</strong><br>
 Københavns Kommune skal stille sig i spidsen for et kommunalt oprør, der kræver afskaffelse af budgetloven, de årlige service- og anlægslofter samt sanktionsregimet. Kommunerne skal igen have lov til selv at tage beslutninger om deres egen økonomi. Samtidig skal der sikres en kommunal udligning, der reelt fungerer og omfordeler fra rige til fattige kommuner.    </li>
-    <li><strong>Kommunen skal drive egne services – nej til udlicitering</strong><br>
+    <li><strong>Kommunen skal drive egne servicetilbud og produktion – nej til udlicitering</strong><br>
 Københavns Kommune skal stoppe privatiseringer og konkurrenceudsættelse af velfærd, rengøring, drift og vedligehold. Disse opgaver skal udføres i offentlig regi med ordentlige arbejdsforhold og demokratisk styring. Kommunale produktions- og servicevirksomheder kan sikre bedre kvalitet, lavere pris og social ansvarlighed.    </li>
   </ol>
     </section>
@@ -210,28 +215,36 @@ Københavns Kommune skal stoppe privatiseringer og konkurrenceudsættelse af vel
   <div class="parallax">
     <section id="bolig">
   <h2 class="section-title">Bolig & Byudvikling</h2>
-   <p>Byudviklingen og især boligsituationen i København er kørt helt af sporet! Det skyldes, at bygherrer og deres finansfolk i årtier har spekuleret i højere priser på boligmarkedet og arbejdet aktivt på at gøre boliger til en begrænset ressource. Almene boliger rives ned under påskud af ghettodannelse, men i virkeligheden fordi lokationerne er for attraktive og skal sælges til private. Arbejderne, sygeplejerskerne, skolelærerne, pædagogerne og alle de andre, der får byen til at hænge sammen, presses ud og må pendle langt. Det vil vi gøre noget ved.</p>
-  <p>Det vil måske undre nogle, at vores forslag er at stoppe nybyggeri. Men hvis nybyggeri havde været løsningen, ville vi ikke være i denne situation. Vi mener, der er brug for en pause, så vi kan tænke os om og skabe en bedre by i samarbejde med hovedstadsregionens kommuner – for københavnerne.</p>
+   <p>Byudviklingen og især boligsituationen i København er kørt helt af sporet! Det skyldes, at bygherrer og deres finansfolk i årtier har spekuleret i højere priser på boligmarkedet og arbejdet aktivt på at gøre bolig til en begrænset ressource. Dette er ikke en utilsigtet og uforudset hændelse. Det er resultatet af bevidst politik, i form af liberaliseringen af boligmarkedet. De ønsker at gøre boliger til en knap ressource, så grund- og ejendomsejere kan uddrage højere og højere profitter fra almindelige mennesker.  Det presser alle! Hjemløse jages væk og kommunale tilbud til de svageste iblandt os jages væk, fordi det angiveligt påvirker boligpriserne. Almene boliger rives ned under påskud af ghettodannelse, men i virkeligheden fordi lokationerne er for attraktive og skal sælges til private. Arbejderne, sygeplejerne, skolelærerne, pædagogerne og alle de andre arbejdere der får byen til at hænge sammen presses ud af byen og må pendle længere og længere for at komme på arbejde. Det vil vi gøre noget ved.</p>
+  <p>Det vil måske undre nogle, at vores forslag er at stoppe nybyggeri. Men hvis nybyggeri havde været løsningen, ville vi ikke være i denne situation. Vi mener, der er brug for en pause, så vi kan tænke os om og skabe en bedre by i samarbejde med hovedstadsregionens kommuner og for københavnerne.</p>
   <ol>
+     <li>
+      <strong>Flere og billigere almene og kommunale boliger</strong><br>
+      København skal ikke længere sælge grunde til ejendomsspekulanter! Københavns Kommune og almene boligselskaber skal i stedet udnytte den eksisterende boligmasse og begynde at opkøbe private udlejningsejendomme samt tomme eller dårligt udnyttede erhvervsejendomme – som kontorer eller hoteller – og omdanne disse til almene og kommunale boliger. Københavns Kommune skal begynde at håndhæve bopælspligten og kræve, at boliger udlejes eller sælges til helårsbeboelse. Korttidsudlejning som AirBnB skal begrænses til egen bolig med cpr-adresse og højst et mindre antal uger om året svarende til den almindelige ferie på arbejdsmarkedet.
+    </li>
     <li>
       <strong>Byggestop</strong><br>
-      Stop byggeri af luksuslejligheder, kontorhoteller og andre profitorienterede udviklinger. Fokuser i stedet på at skabe billige og bæredygtige boliger og institutioner ud af den eksisterende boligmasse, der tjener almindelige borgere og ikke investorinteresser. Byudvikling på Amager Fælled, Lynetteholmen, Fiskerhavnen, og andre naturområder skal omgående stoppes!
+      Vi har allerede overskredet de planetære ressourcemæssige grænser og for CO2 udledningen. Byggeri af nye bygninger og infrastruktur er en af de største kilder til CO2 udledningen og intet sted i Danmark bygges der mere end i København. Kommunistisk Parti kræver et byggestop med det samme og indtil der kan findes bæredygtige måder at bygge nyt på. Københavns Kommune skal i stedet fokusere på at skabe billige og bæredygtige boliger og institutioner ud af den eksisterende boligmasse, der tjener almindelige borgere og ikke bygherrer og investorklassen. Den igangværende byudvikling på Amager Fælled, Lynetteholm, og andre naturområder skal omgående stoppes og afvikles!
     </li>
     <li>
       <strong>Nedrivningsstop</strong><br>
-      Indfør et forbud mod nedrivning af bygninger, der kan renoveres eller moderniseres. Nedrivninger skal kun være en sidste udvej, når renovering slet ikke er mulig. Omdan og benyt den eksisterende bygningsmasse efter behov. Nedrivning og genopbygning er alt for CO2 belastende!
+      ligesom med nybyggeri kræver nedrivning for derefter at bygge nyt enorme ressourcer og fører til større CO2 udledning. Kommunistisk Parti ønsker at indføre et forbud mod nedrivning af bygninger, der kan renoveres eller moderniseres. Nedrivninger skal kun være en sidste udvej, når renovering slet ikke er mulig, og kun efter upartisk vurdering og godkendelse af myndighederne.
     </li>
     <li>
-      <strong>Flere og billigere almene boliger</strong><br>
-      Københavns Kommune og almene boligselskaber kan opkøbe private udlejningsejendomme samt tomme eller dårligt udnyttede erhvervsejendomme – som kontorer eller hoteller – og omdanne disse til almene boliger. Også større lejligheder kan opdeles i mindre enheder og indgå i den almene sektor. Hvis der skal bygges nyt, må Københavns Kommune ophæve nogle af de finansielle restriktioner for alment boligbyggeri. Det indebærer blandt andet, som i Wien, at udleje kommunale byggegrunde til almene boligorganisationer til under markedspris, for at mindske grundudgifterne. Kommunen kan samtidig lægge politisk pres på staten for at hæve eller tilpasse maksimumsbeløbene til de høje byggeomkostninger i hovedstaden. Hurtigere sagsbehandling og bedre koordinering af godkendelsesprocesser kan reducere udgifter og forsinkelser.
+      <strong>Generel dispensation fra bygningsreglementet</strong><br>
+      Virksomheder som Rockwool, Velux og Aalborg Portland påvirker bygningsreglementet gennem en kombination af teknisk ekspertise, lobbyarbejde og strategiske alliancer. Deres mål er at fremme regler, der enten skaber markedsfordele eller beskytter deres eksisterende forretning. Københavns Kommune giver allerede dispensation fra bygningsreglementet under visse forudsætninger, dette skal udvides så det bliver muligt at benytte nye materialer, når bygninger skal renoveres eller omdannes.
+    </li>
+    <li>
+      <strong>Fælles byudvikling i hele hovedstadsområdet</strong><br>
+      Købenahvns Kommune skal i samarbejde med alle de andre hovedstadskommuner påbegynde en langsigtet plan for, hvordan hovedstaden skal udvikles. Mange af Københavns udfordringer kan ikke løses isoleret af Københavns Kommune. Der er brug for en ny og moderne udgave af den såkaldte ”Fingerplan” i et samarbejde om transport, infrastruktur og byudvikling med alle hovedstadskommuner. Kommunistisk Parti ønsker at skabe flere interessante og attraktive byområder i hele hovedstadsområdet.. Disse vil naturligt ligge, hvor den forbedrede offentlige transport har forbindelser og knudepunkter. Vi skal under ingen omstændigheder bygge ud i havet, som med Lynetteholmen, eller bygge på de få arealer tilbage i Københavns Kommune, som Amager Fælled, Tippen m.fl., hvor der er en særlig kulturel eller naturmæssig egenart.
+    </li>
+    <li>
+      <strong>Nedlæg By & Havn</strong><br>
+      By & Havn er en katastrofe for Københavns økonomi! Alle københavnerne er ved at blive dybt forgældede i mange generationer frem og samtidig sælges der ud af vores alle sammens ejendom og byens mest naturskønne arealer. By & Havn er forpligtet til at skabe overskud for at betale gæld til staten (bl.a. fra metrobyggeri), hvilket betyder, at grunde typisk sælges til højestbydende private udviklere frem for til almene boliger eller kommunale formål. Men det tragiske er, at man samtidig bygger dyr trafikinfrastruktur til områder, hvor der endnu ikke bor nogen, og derfor vokser gælden bare! I sidste ende er det bygherrerne og boligspekulanterne, der får både gratis infrastruktur til deres nyanskaffede grunde og en kæmpe profit ved salget af ejendommene. Kommunistisk Parti kræver et stop for den model og en nedlægning af By & Havn.
     </li>
     <li>
       <strong>Bryd ghettoloven</strong><br>
-      Folk skal ikke smides ud af deres hjem og boliger skal ikke privatiseres eller rives ned på grund af en racistisk lovgivning. Punktum.
-    </li>
-    <li>
-      <strong>Lokaludvalgene skal have vetoret i lokalplanerne</strong><br>
-      For at gøre lokalplanlægning mere demokratisk bør Københavns Kommune sikre, at lokaludvalgene får en styrket og formel rolle i processen – ikke blot som høringsparter, men som aktive medbeslutningstagere. Lokaludvalgene repræsenterer beboernes interesser i de enkelte bydele og bør derfor have reel indflydelse, herunder vetoret i lokalplansager, der har væsentlig betydning for nærområdet. Det vil sikre, at planlægningen af byen sker i tæt samspil med dem, der bor og lever der, og give græsrodsbevægelser og lokalsamfund mulighed for at beskytte fælles værdier, byrum og boligmæssig diversitet mod ensidige udviklingsinteresser.
+      Folk skal ikke smides ud af deres hjem og boliger skal ikke privatiseres eller rives ned på grund af en racistisk lovgivning. Københavns Kommune skal arbejde sammen med de almene boligselskaber om at bryde eller omgå ghettoloven.
     </li>
   </ol>
 </section>
@@ -245,15 +258,16 @@ Københavns Kommune skal stoppe privatiseringer og konkurrenceudsættelse af vel
   <ol>
     <li><strong>Gratis offentlig transport</strong><br>
 Busser, S-tog og metro skal være gratis for brugerne. Dette skal finansieres gennem skat og afgifter på privatbilisme fx roadpricing. Gratis offentlig transport reducerer biltrafikken, forbedrer luftkvaliteten og gør det nemmere for alle at bevæge sig rundt i byen.     </li>
-    <li><strong>Udvid kollektiv transport</strong><br>
-Der er brug for et kollektivt transportsystem, som ikke bare binder København sammen som by, men også strækker sig ud til hele Sjælland. Kommunistisk Parti ønsker etableringen af et finmasket netværk af S-tog og busser med dedikerede spor, der sikrer hurtig, pålidelig og miljøvenlig transport. Dette mindsker behovet for privatbilisme og gør det nemmere for beboere at pendle uden egen bil. Hvor der etableres metro skal det aflaste gaderne fra biler ikke kun tjene boligspekulanternes byudvikling. Vi skaber desuden bedre vilkår for håndværkere og leverandører. Hvis der kommer færre privatbiler på gaderne, sidder håndværkere og leverandører ikke i kø og kommer derfor hurtigere og billigere frem.    </li>
+    <li><strong>Udvid og optimer offentlig transport</strong><br>
+Der er brug for et kollektivt transportsystem, som ikke bare binder København sammen som by, men også strækker sig ud til hele Sjælland. Kommunistisk Parti ønsker etableringen af et finmasket netværk af S-tog og busser med dedikerede spor, der sikrer hurtig, pålidelig og miljøvenlig transport. Dette mindsker behovet for privatbilisme og gør det nemmere for beboere at pendle uden egen bil. Hvor der etableres metro skal det aflaste gaderne fra biler ikke kun tjene boligspekulanternes byudvikling. Vi skaber desuden bedre vilkår for håndværkere og leverandører. Hvis der kommer færre privatbiler på gaderne, sidder håndværkere og leverandører ikke i kø og kommer derfor hurtigere og billigere frem.</li>
     <li><strong>Stop udvidelse af bilinfrastruktur som Østlig Ringvej</strong><br>
-Østlig Ringvej vil ikke løse trafikale udfordringer i København. Hver gang de udvider vejene ét sted, så skaber det trængsel et nyt sted. Hvis de får bygget Østlig Ringvej, en omfartsvej under Øresund fra Østerbro til Amagermotorveje, vil det skabe massiv kø i og omkring Svanemøllen og på Østerbro. Især hvis den vej også skal betjene de 80.000 mennesker der angiveligt skal bo på og omkring Lynetteholmen. Vi skal ikke udvide infrastrukturen til bilerne, men vi skal derimod skabe en sammenhængende hovedstad, hvor bilen slet ikke er nødvendig for at komme rundt.    </li>
+Østlig Ringvej vil ikke løse trafikale udfordringer i København. Hver gang de udvider vejene ét sted, så skaber det trængsel et nyt sted. Hvis de får bygget Østlig Ringvej, en omfartsvej under Øresund fra Østerbro til Amagermotorveje, vil det skabe massiv kø i og omkring Svanemøllen og på Østerbro. Især hvis den vej også skal betjene de 80.000 mennesker der angiveligt skal bo på og omkring Lynetteholm. Vi skal ikke udvide infrastrukturen til bilerne, men vi skal derimod skabe en sammenhængende hovedstad, hvor bilen slet ikke er nødvendig for at komme rundt.</li>
     <li><strong>Sikre veje for bløde trafikanter</strong><br>
-Fremtiden tilhører de såkaldte bløde trafikanter, fodgængere og cyklister. Dette giver mulighed for at skabe nye rekreative områder med bredere fortove og cykelstier, og flere grønne rekreative områder. Det vil ikke blot skabe mere tryghed i byen, men også styrke fællesskabet og den sociale sammenhængskraft. Dette skaber en sikrere og mere attraktiv infrastruktur for fodgængere og cyklister. Kommunistisk Parti ønsker at reducere antallet af vejbaner på store veje (f.eks. ned til maks. 4 spor) og omfordele overskudsarealer til bredere fortove, cykelstier og grønne rekreative områder.
-    </li>
+Fremtiden tilhører de bløde trafikanter, fodgængere og cyklister. Dette giver mulighed for at skabe nye rekreative områder med bredere fortove og cykelstier, og flere grønne rekreative områder. Det vil ikke blot skabe mere tryghed i byen, men også styrke fællesskabet og den sociale sammenhængskraft. Dette skaber en sikrere og mere attraktiv infrastruktur for fodgængere og cyklister. Kommunistisk Parti ønsker at reducere antallet af vejbaner på store veje (f.eks. ned til maks. 4 spor) og omfordele overskudsarealer til bredere fortove, cykelstier og grønne rekreative områder.</li>
+    <li><strong>Etabler trafikøer i byområder</strong><br>
+Københavns Kommune skal indføre flere såkaldte “trafikøer”, hvor biler kun kan køre ind og ud, men ikke igennem. Dette reducerer gennemkørsel, skaber roligere byrum og mere trafiksikkerhed for københavnerne. </li>
     <li><strong>Roadpricing med social retfærdighed</strong><br>
-Københavns Kommune bør arbejde målrettet for indførelse af et betalingssystem for kørsel i højt trafikerede zoner, hvor prissætningen tilpasses indkomstniveauet og formålet med kørslen. Vi ønsker at begrænse den unødvendige privatbilisme, ikke dem der skal bruge bilen i forbindelse med arbejde eller på grund af dårlig mobilitet. Indtægterne skal geninvesteres i offentlig transport og cykelinfrastruktur, hvilket både reducerer trængsel og finansierer bæredygtige initiativer.    </li>
+Københavns Kommune bør arbejde målrettet for indførelse af et betalingssystem for kørsel i højt trafikerede zoner, hvor prissætningen tilpasses indkomstniveauet og formålet med kørslen. Vi ønsker at begrænse den unødvendige privatbilisme, ikke dem der skal bruge bilen i forbindelse med arbejde eller på grund af dårlig mobilitet. Indtægterne skal geninvesteres i offentlig transport og cykelinfrastruktur, hvilket både reducerer trængsel og finansierer bæredygtige initiativer.</li>
     <li><strong>Reducer parkeringsarealer og mere delebil</strong><br>
 Kommunistisk Parti kræver, at der skabes flere dedikerede parkeringsmuligheder for håndværkere, leverandører og folk med handicap. På længere sigt, når vi ser behovet for privatbilisme og bilejerskab falde på grund bedre kollektiv trafik på tværs af sjælland, bedre og flere cykelstier, udbredelsen af delebilsordninger, der er til at betale osv., kan vi begynde at skære ned på antallet af parkeringspladser i Københavns Kommune. På det tidspunkt kan vi begynde at omdanne overskudsarealer til rekreative og cykelvenlige zoner. Samtidig skal delebilsordninger og andre alternative mobilitetsformer fremmes, så vi kan deles om de biler vi har behov for. Men vi ønsker først at reducere behovet og derefter fjerne pladsen, ikke omvendt som rådhuset har gjort hidtil.    </li>
   </ol>
@@ -264,13 +278,13 @@ Kommunistisk Parti kræver, at der skabes flere dedikerede parkeringsmuligheder 
   <div class="parallax">
     <section id="klimasikring">
       <h2 class="section-title">Klimasikring</h2>
-  <p>København står over for en afgørende opgave: at reducere sin CO₂-udledning markant for at bidrage til den globale klimakamp og sikre en bæredygtig fremtid for byens borgere. Kommunistisk Parti mener, at klimakampen ikke kan overlades til markedskræfterne og kapitalisterne. De har skabt problemet og tjener på dets fortsatte forværring. Der er behov for vilje og visioner, hvis vi skal afbøde klimakatastrofen og dens værste konsekvenser.
-Alle vores politiske områder indeholder måder at reducere CO₂-udledningen. Vi arbejder for en politik, der sætter mennesket og miljøet før profit, og som sikrer, at København bliver en bæredygtig by.
+  <p>København står over for en afgørende opgave: at reducere sin CO2-udledning markant for at bidrage til den globale klimakamp og sikre en bæredygtig fremtid for byens borgere. Kommunistisk Parti mener, at klimakampen ikke kan overlades til markedskræfterne og kapitalisterne. De har skabt problemet og tjener på dets fortsatte forværring. Der er behov for vilje og visioner, hvis vi skal afbøde klimakatastrofen og dens værste konsekvenser.
+Alle vores politiske områder indeholder måder at reducere CO2-udledningen på. Vi arbejder for en politik, der sætter mennesket og miljøet før profit, og som sikrer, at København bliver en bæredygtig by.
 </p>
   <ol>
-    <li><strong>Stormflodssikring med naturen</strong><br>
+    <li><strong>Naturbaseret stormflodssikring - etablering af diger og strandparker langs kysten</strong><br>
 Der skal anlægges vådområder, naturlige bufferzoner, diger og grøfter i kyst- og vandmiljøet, så ekstreme vandmængder ved stormflod og skybrud kan absorberes og bremse. Dette vil desuden skabe positive effekter for biodiversitet og rekreative muligheder. Egnet overskudsjord skal anvendes til at opføre ordentlige diger, som både fungerer som beskyttelse mod havstigning og stormflod og skaber multifunktionelle, grønne rekreative zoner. Vi skal afvikle Lynetteholmen og droppe alle planer om at bebygge den. Lynetteholmen er ikke klimasikring og vil blive oversvømmet som noget af det første i København.    </li>
-    <li><strong>Mindre asfalt, mere græseng - åbning af Ladegårdsåen</strong><br>
+    <li><strong>Åbning af Ladegårdsåen og reduktion af vejarealer	- mindre asfalt, mere græseng</strong><br>
 Genindfør Ladegårdsåen ved at reducere antallet af vejbaner langs f.eks. Åboulevarden, så Åen kan fungere som en naturlig afløbs- og rekreativ zone. Dette vil både mindske oversvømmelsesrisikoen og skabe attraktive byrum. Der desuden skal der etableres nedsivningsområder, græsenge og vandløbsanlæg for at øge vandinfiltrationen og mindske belastningen ved ekstreme regnhændelser - både ved Ladegårdsåen og på tværs af hele København.    </li>
     <li><strong>Styr på klimaregnskabet og reel CO2 neutralitet inden 2030</strong><br>
 Københavns Kommune skal regne al kommunens CO2 udledning ind i CO2 regnskabet - også for infrastruktur og forbrug. I dag tages der ikke højde for CO2 udledningen i forbindelse med københavnernes forbrug og for anlæg af infrastruktur. Desuden kan Københavns Kommune modregne investeringer i grøn energi, som bygges i andre kommuner, fra sit eget CO2-regnskab. Kort sagt der bliver fusket med tallene, så Københavns Kommune ser grønnere ud end byen egentlig er. Selv med fusk i tallene var politikerne på rådhuset ikke i stand til at leve op til egne CO2-reduktionsmål så København kunne blive CO2 neutral i 2025. Kommunistisk Parti kræver, at der kommer styr på tallene, så de beslutningstagere kan holdes til ansvar.    </li>
@@ -297,10 +311,10 @@ Københavns Kommune skal regne al kommunens CO2 udledning ind i CO2 regnskabet -
       Både ældre og mennesker med handicap, psykiske lidelser eller sociale udfordringer skal sikres den praktiske og personlige hjælp, de har behov for i forhold til den enkeltes livssituation. Det gælder for eksempel hjemmehjælp, ledsagelse eller anden støtte. Økonomiske hensyn eller standardiserede skøn må ikke føre til fravalg af nødvendig hjælp.    </li>
     <li><strong>Hurtig afklaring</strong><br>
       Langvarigt syge og mennesker med handicap skal ikke være på kontanthjælp i årevis, men sikres hurtig afklaring til fleksjob eller førtidspension. Unge og voksne, der er i beskæftigelsessystemet og har andre udfordringer end arbejdsløshed, skal i afklaringsforløbet sikres den nødvendige individuelle støtte som for eksempel mentor, forløb i socialøkonomisk virksomhed eller andet.    </li>
-    <li><strong>Indholdsrigt liv på plejehjem</strong><br>
+    <li><strong>Indholdsrigt liv - også på plejehjem</strong><br>
       Der skal ske en opnormering af fastansat, uddannet personale på plejehjemmene. Der skal være ressourcer til andet end den mest basale pleje, som for eksempel individuel omsorg og samtale, individuelle aktiviteter efter beboernes eget valg, flere arrangementer på stedet, ture ud af huset samt ferier. Vigtigt er også at sikre bedre vilkår på sosu-uddannelserne og større krav til eleverne.    </li>
     <li><strong>Elever med særlige behov skal sikres gode specailtilbud</strong><br>
-      De københavnske folkeskoler står overfor en stor udfordring. De skal føre regeringens nye folkeskoleaftale ud i livet samtidig med, at der er krav fra et flertal i Borgerrepræsentationen om, at flere elever med særlige behov skal inkluderes i almenklasserne. Det er en umulig øvelse. Almenklasserne kan ikke rumme flere elever med særlige behov. De skal i stedet sikres gode specialtilbud, der har særlig viden om netop denne gruppe børn. Der skal tilføres flere penge til skoleområdet, så økonomien til at dække det stigende behov for specialtilbud ikke tages fra almenområdet. På sigt er den billigste løsning at sikre alle børn det rigtige skoletilbud fra starten.    </li>
+      De københavnske folkeskoler står overfor en stor udfordring. De skal føre regeringens nye folkeskoleaftale ud i livet samtidig med, at der er krav fra et flertal i Borgerrepræsentationen om, at flere elever med særlige behov skal inkluderes i almenklasserne. Det er en umulig øvelse. Almenklasserne kan ikke rumme flere elever med særlige behov. De skal i stedet sikres gode specialtilbud, der har særlig viden om netop denne gruppe børn. Der skal tilføres flere penge til skoleområdet, så økonomien til at dække det stigende behov for specialtilbud ikke tages fra almenområdet. På sigt er den billigste løsning at sikre alle børn det rigtige skoletilbud fra starten.</li>
     <li><strong>Minimumsnormeringer i børnehøjde</strong><br>
       Selvom, der er indført minimumsnormeringer ved lov, er det langt fra virkeligheden i de københavnske daginstitutioner. Kravet er stadig en reel normering i børnehøjde på højst tre børn pr. voksen i vuggestuen og seks børn pr. voksen i børnehaven. Flere skal have en pædagogisk uddannelse, og der skal sikres den nødvendige ekstra støtte til børn med særlige behov.    </li>
     <li><strong>Flere herbergspladser og en vej til fast bolig</strong><br>
@@ -350,7 +364,7 @@ Kommunen skal kun lave aftaler med overenskomstdækkede virksomheder. Der skal s
       </li>
       <li><strong>Et trygt og retfærdigt arbejdsliv for alle</strong><br>
 Københavns Kommune er en af landets største arbejdsgivere – og bør gå forrest i kampen for ordentlige vilkår og faste stillinger. Alt for mange kommunalt ansatte arbejder på deltid, selvom de ønsker fuldtid.  Det går ud over både livskvalitet og velfærdens kvalitet. Kommunen skal derfor tilbyde fuldtidsansættelse som udgangspunkt i alle faggrupper og arbejde målrettet for at fastholde og rekruttere medarbejdere med gode arbejdsvilkår, tryghed og faglig udvikling. Praktikforløb og løntilskud til arbejdsløse skal desuden bruges som en reel bro til ordinær beskæftigelse, ikke som gratis arbejdskraft.      </li>
-      <li><strong>Faglig opkvalificering og kamp mod prekariatet</strong><br>
+      <li><strong>Faglig opkvalificering og kamp mod usikre ansættelser</strong><br>
 Samtidig skal kommunen tage ansvar for at løfte ufaglærte ansatte og arbejdssøgende til faglært niveau gennem opkvalificering og uddannelsesforløb. Det skaber bedre livsvilkår for den enkelte og styrker det samlede arbejdsmarked. På det prekære arbejdsmarked – hvor løse ansættelser, lave lønninger og manglende rettigheder hersker – skal kommunen gribe ind. Der skal laves en målrettet indsats for at sikre, at ingen arbejder for kommunen eller via kommunale ordninger uden tryghed og ordentlige vilkår.      </li>
       <li><strong>Arbejdsformidling med ansvar</strong><br>
 Når Københavns Kommune hjælper ledige borgere i job, skal det ske med værdighed og ansvar. Alt for ofte ser vi, at kommunale jobcentre henviser borgere til virksomheder uden overenskomst, med dårlige arbejdsvilkår og usikre ansættelser. Det er uacceptabelt. Kommunen skal sikre, at enhver formidling af arbejde – uanset om det er praktik, job med løntilskud eller ordinær ansættelse – udelukkende sker til virksomheder, der kan dokumentere ordnede forhold. Det betyder overenskomst, arbejdsmiljøstandarder og respekt for arbejdstagerrettigheder.      </li>
@@ -397,6 +411,18 @@ Ved at integrere kunstig intelligens i administrative opgaver kan kommunen øge 
     </section>
   </div>
 
+    <div class="parallax">
+    <section id="omkp">
+      <h2 class="section-title">Om Kommunistisk Parti</h2>
+<p>Kommunistisk Parti er et arbejderparti, der kæmper for fællesskab, solidaritet og reel demokrati. Vi står på arbejderklassens side i kampen mod ulighed, privatisering og den stigende udbytning, som præger vores samfund. Vi ønsker et København og et Danmark, hvor menneskers behov går forud for profit, og hvor velfærd, bolig, klima og kultur sikres som fælles goder.</p>
+      <ol>
+    <li><strong>Hvorfor vi stiller op</strong><br>
+      Vi stiller op til kommunalvalget, fordi byens udvikling alt for længe er blevet styret af kapitalinteresser, udviklere og spekulanter frem for borgernes behov. Lejere presses ud, velfærden udhules, og almindelige københavnere har mindre og mindre at skulle have sagt i de beslutninger, der former deres hverdag. Kommunalpolitik handler om helt konkrete forhold: skoler og daginstitutioner, boliger, sundhedstilbud, grønne områder, ældrepleje og en by, hvor alle kan leve et godt liv.
+Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at deres hverdag underlægges profitlogik. Vi vil kæmpe for billige og almene boliger, stærk offentlig velfærd, grønne byrum og et København, hvor fællesskab og solidaritet er grundlaget – ikke markedets jagt på kortsigtet gevinst.    </li>
+  </ol>
+    </section>
+  </div>
+
 <div class="social-float">
   <a href="https://www.facebook.com/kbh.kommunister.dk" target="_blank">
     <i class="fab fa-facebook-f"></i>
@@ -406,12 +432,144 @@ Ved at integrere kunstig intelligens i administrative opgaver kan kommunen øge 
   </a>
 </div>
 
+<section id="kandidater" style="padding: 4rem 1rem; background-color: white;">
+  <h2 class="section-title" style="text-align:center; margin-bottom: 2rem;">Kandidater</h2>
+
+  <style>
+    /* Scoped styles just for this section */
+    #kandidater .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      justify-items: center;
+    }
+    #kandidater .image-item {
+      text-align: center;
+      max-width: 300px;
+    }
+    #kandidater .image-item img {
+      width: 150px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform .15s ease;
+    }
+    #kandidater .image-item img:hover {
+      transform: scale(1.03);
+    }
+    #kandidater .name-tag {
+      margin: .5rem 0 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    #kandidater .image-text {
+    grid-column: 1 / -1;   /* makes it stretch across all columns */
+    width: 100%;
+    max-width: 700px;      /* now this will take effect */
+    margin: 1rem auto 0;   /* center it */
+    }
+  </style>
+
+  <div class="image-gallery">
+    <!-- 1: Brian -->
+    <div class="image-item">
+      <img src="1. Brian.png" alt="Brian" onclick="toggleText('txt1')" />
+      <div class="name-tag">Brian</div>
+      <div id="txt1" class="image-text">Jeg arbejder som gymnasielærer i engelsk og er aktiv i fagligt arbejde som tillidsrepræsentant og politisk arbejde i Kommunistisk Parti. Som københavner brænder jeg for at styrke fællesskaberne og skabe en by, hvor almindelige mennesker kan leve godt. Jeg stiller op til kommunalvalget, fordi jeg vil være med til at sikre billige boliger, en stærk velfærd og en mere solidarisk byudvikling, hvor mennesker går forud for profit.</div>
+    </div>
+
+    <!-- 2: Jan -->
+    <div class="image-item">
+      <img src="2. Jan.png" alt="Jan" onclick="toggleText('txt2')" />
+      <div class="name-tag">Jan</div>
+      <div id="txt2" class="image-text">
+        Jeg er pensionist og har arbejdet på B&W skibsværft som skibsbygger og i fagforeningerne RBF og 3F København som faglig sekretær. Jeg er formand for Sydhavnens Venner, sidder i lokaludvalget for Kgs. Enghave og i bestyrelsen for BK Frem Oldboys. Jeg er en københavnerdreng, der elsker mangfoldigheden i byen – især Sydhavnen, som er et arbejderkvarter med stærke fællesskaber tæt på naturen. Jeg stiller op, fordi jeg er træt af den nuværende udvikling i byen, og jeg vil gøre en forskel for københavnerne. Københavnerne skal bestemme over byen og dens udvikling i dagligdagen og ikke engang hver 4 år og  fordi jeg er træt at den nuværende udvikling og flertallet af de politikere der sidder i BR. København er for mennesker og natur og ikke profit.
+        
+      </div>
+    </div>
+
+    <!-- 3: Rosa -->
+    <div class="image-item">
+      <img src="3. Rosa.png" alt="Rosa" onclick="toggleText('txt3')" />
+      <div class="name-tag">Rosa</div>
+      <div id="txt3" class="image-text">Jeg er studerende, bor i Sydhavnen og er tovholder i Fredsinitiativet. Mit politiske engagement og København betyder enormtmeget for mig, ikke mindst de grønne områder og forskelligheden mellem bydelene, som giver hver del af byen sin egen stemning. Jeg stiller op til kommunalvalget, fordi jeg ønsker et mere solidarisk København med billigere boliger og bedre byliv. Som ung kandidat ønsker jeg at skabe håb for at en mere retfærdig og solidarisk kommune er mulig.</div>
+    </div>
+
+    <!-- 4: Rune -->
+    <div class="image-item">
+      <img src="4. Rune.png" alt="Rune" onclick="toggleText('txt4')" />
+      <div class="name-tag">Rune</div>
+      <div id="txt4" class="image-text">Jeg er aktiv i Palæstina-solidaritetsarbejdet og har i flere år organiseret møder, demonstrationer og kampagner for international retfærdighed. For mig hænger kampen mod undertrykkelse ude i verden sammen med kampen for et retfærdigt København. Jeg stiller op til kommunalvalget, fordi jeg vil være med til at skabe en by, hvor solidaritet, demokrati og fællesskab går forud for profit og kortsigtede interesser.</div>
+    </div>
+
+    <!-- 5: Kris -->
+    <div class="image-item">
+      <img src="5. Kris.png" alt="Kris" onclick="toggleText('txt5')" />
+      <div class="name-tag">Kris</div>
+      <div id="txt5" class="image-text">
+        Jeg er bestyrelsesmedlem i Døveforeningen af 1866 siden december 2024, bestyrelsesmedlem af Tegnbuen (LGBT+ forening for tegnsprogsbrugere) siden maj 2025. Har også tidligere haft andre bestyrelsesposter.
+        Jeg engagerer mig i forenings- og bestyrelsesarbejde, fordi jeg gerne vil give noget tilbage til de fællesskaber,
+        jeg selv er en del af. Det, jeg især sætter pris på ved København, er den store døvemiljø med dens stolte døvehistorie.
+        Jeg valgte at flytte hertil, fordi flest døve i Danmark bor der, og det giver bedre sociale muligheder og fællesskab.
+        Men jeg er siden da kommet til at sætte pris på byens rige historie, som afspejles i bygninger, gader og pladser.
+      </div>
+    </div>
+
+    <!-- 6: Hans -->
+    <div class="image-item">
+      <img src="6. Hans.png" alt="Hans" onclick="toggleText('txt6')" />
+      <div class="name-tag">Hans</div>
+      <div id="txt6" class="image-text">Jeg arbejder på Copenhagen Fablab og Værkstederne i Valby Kulturhus under Københavns Kommune. Jeg sidder i afdelingsledelsen i KP Nørrebro/Østerbro, er suppleant i Kommunistisk Partis landsledelse og medlem af bestyrelsen for Retfærdig Boligpolitik (Almen Modstand). I min fritid er jeg også aktivist i Folkets Hus, gamer, programmerer og bruger tid med venner og familie. Jeg kæmper for flere billige almene boliger, mindre privatbilisme og bedre offentlig transport. Kommunalpolitikken skal meget længere til venstre.  </div>
+    </div>
+
+    <!-- 7: Julien -->
+    <div class="image-item">
+      <img src="7. Julien.png" alt="Julien" onclick="toggleText('txt7')" />
+      <div class="name-tag">Julien</div>
+      <div id="txt7" class="image-text">Jeg er 23 år og laborentstuderende. For mig handler det politiske arbejde om solidaritet – både lokalt og internationalt. Solidaritet betyder også at stå skulder ved skulder med Københavns mangfoldige queer-miljø, som gennem årtier har kæmpet for retten til at være og leve frit. København skal være en by, der tager ansvar, viser solidaritet med undertrykte folk i verden og sikrer, at vi som by ikke investerer i krig og undertrykkelse, men i fællesskab, frihed og fred.</div>
+    </div>
+
+    <!-- 8: Marc -->
+    <div class="image-item">
+      <img src="8. Marc.png" alt="Marc" onclick="toggleText('txt8')" />
+      <div class="name-tag">Marc</div>
+      <div id="txt8" class="image-text">Jeg er rapper og journalist og medlem af Kommunistisk Partis landsledelse. For mig hænger politik og kultur tæt sammen – gennem musikken formidler jeg politiske budskaber, og jeg engagerer mig aktivt i demonstrationer og andre fællesskaber, der arbejder for social retfærdighed. Jeg nyder Københavns mangfoldighed og de mange politiske og kulturelle miljøer, hvor folk tør skille sig ud og skabe levende fællesskaber. Jeg stiller op til kommunalvalget, fordi København skal være en by, hvor almindelige mennesker kan bo og leve. Vi har brug for flere billige boliger, lavere transportpriser og et stop for gentrificeringen. Projekter som Lynetteholmen og byggeriet på Amager Fælled skal bremses – byen skal udvikles for fællesskabet og naturen, ikke for profit.</div>
+    </div>
+
+    <!-- 9: Elias -->
+    <div class="image-item">
+      <img src="9. Elias.png" alt="Elias" onclick="toggleText('txt9')" />
+      <div class="name-tag">Elias</div>
+      <div id="txt9" class="image-text">Jeg er stukkatør og aktiv i 3F BJMF, hvor jeg sidder i bestyrelsen for Murerbrancheklub København og omegn. Mit engagement udspringer af et ønske om at styrke fagbevægelsen og sikre bedre vilkår for bygningsarbejdere og andre i håndværksfagene. Jeg har selv oplevet, hvordan faglig organisering gør en forskel, og derfor arbejder jeg for at flere unge kommer ind i fagforenignerne og får en stærk stemme på deres arbejdsplads. For mig er København en by, hvor arbejderklassen skal kunne leve og bo – ikke presses ud af spekulation og stigende boligpriser. Jeg stiller op, fordi jeg vil være med til at kæmpe for ordentlige arbejdsforhold, flere billige boliger og et stærkt fællesskab, hvor det er mennesker og natur - ikke profit, der sætter retningen for byens udvikling.</div>
+    </div>
+
+    <!-- 10: Alma -->
+    <div class="image-item">
+      <img src="10. Alma.png" alt="Alma" onclick="toggleText('txt10')" />
+      <div class="name-tag">Alma</div>
+      <div id="txt10" class="image-text">Jeg er sygeplejerstuderende og der ud over engageret i kultur- og fritidslivet, fordi jeg mener, at alle skal have adgang til musik, sport og fællesskab – uanset indkomst. jeg brænder også for klima og miljø, og for mig hænger kampen for social retfærdighed og grøn omstilling uløseligt sammen. Vi må sige stop for overflødigt byggeri, for gentrificering og for naturødelæggende projekter som Lynetteholmen. København skal udvikles på fællesskabets og naturens præmisser.</div>
+    </div>
+  </div>
+
   <script>
     function toggleText(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === "block" ? "none" : "block";
+      const boxes = document.querySelectorAll('#kandidater .image-text');
+      const clicked = document.getElementById(id);
+      const isOpen = clicked && clicked.style.display !== 'none';
+
+      // Close all boxes
+      boxes.forEach(el => { el.style.display = 'none'; });
+
+      // If the clicked one wasn't open, open it
+      if (clicked && !isOpen) {
+        clicked.style.display = 'block';
+      }
     }
   </script>
+</section>
+
 
   <footer>
     &copy; 2025 Kommunistisk Parti København
