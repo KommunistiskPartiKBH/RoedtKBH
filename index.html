@@ -19,6 +19,10 @@
       --leaf-green: #6BA539;
     }
 
+    .intro-text {
+    margin-bottom: 1.2rem;
+    }
+
     html {
       scroll-behavior: smooth;
     }
@@ -36,10 +40,16 @@
       background-color: var(--campaign-green);
     }
 
-    header img {
-      width: 400px;
-      margin-bottom: 0rem;
-    }
+    .header-logo {
+  text-align: center;
+  margin-bottom: 2rem; /* spacing below the logo */
+  }
+
+  .header-logo img {
+    width: 400px;   /* increase logo size */
+    max-width: 90%; /* keep it responsive on smaller screens */
+    height: auto;
+  }
 
     h1 {
       font-family: 'Montserrat', sans-serif;
@@ -141,14 +151,193 @@
 #kandidater .image-text {
   display: none;   /* all candidate texts hidden by default */
 }
+
+header {
+  background-color: var(--campaign-green);
+  padding: 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.header-left {
+  flex: 1;
+  text-align: center; /* centers logo, h1, and text */
+}
+
+.header-left img {
+  width: 300px;       /* make logo larger (adjust as needed) */
+  max-width: 100%;    /* prevent overflow on small screens */
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.header-left h1 {
+  color: var(--party-red);
+  margin-bottom: 1rem;
+}
+
+.header-left .intro-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 0 auto 1.2rem;   /* top 0, left/right auto, bottom 1.2rem */
+}
+.header-left .intro-text:last-child {
+  margin-bottom: 0;        /* optional: no extra space after the last paragraph */
+}
+
+
+.header-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* ===== Header layout (desktop first) ===== */
+header {
+  background-color: var(--campaign-green);
+  padding: 2rem 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;     /* vertically center left/right */
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  flex: 1;
+  text-align: center;      /* center logo + text box */
+}
+
+.header-left img {
+  width: 300px;            /* bigger logo */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.header-left h1 {
+  color: var(--party-red);
+  margin-bottom: 1rem;
+}
+
+.header-left .intro-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 400px;        /* readable line length */
+  margin: 0 auto 1.2rem;   /* add spacing between paragraphs */
+}
+.header-left .intro-text:last-child { margin-bottom: 0; }
+
+.header-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;  /* vertical index on desktop */
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* Optional: make links a bit tighter on desktop */
+.header-nav a {
+  text-decoration: none;
+  color: var(--party-red);
+  background-color: var(--campaign-green);
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+/* ===== Responsive tweaks ===== */
+
+/* Tablets: give nav a little more room if needed */
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 2rem;
+  }
+}
+
+/* Phones: stack and center */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;   /* stack left + nav */
+    align-items: center;
+    text-align: center;
+  }
+  .header-nav {
+    align-items: center;      /* center the links */
+  }
+  .header-nav a {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+  }
+}
+
 </style>
 </head>
 <body>
 
-  <header>
+<header>
+    <!-- Logo centered on top -->
+  <div class="header-logo">
     <img src="logo.png" alt="logo">
-    <h1>Politik</h1>
-    <nav>
+  </div>
+
+  <div class="header-container">
+    <!-- Left column -->
+    <div class="header-left">
+      <h1>Kommunistisk Parti</h1>
+<p class="intro-text">
+  Kommunistisk Parti er et arbejderparti, der kæmper for fællesskab, solidaritet
+  og ægte demokrati. Vi står på arbejderklassens side i kampen mod ulighed,
+  privatisering og den stigende udbytning, som præger vores samfund.
+</p>
+
+<p class="intro-text">
+  Vi ønsker et København og et Danmark, hvor menneskers behov går forud for
+  profit – og hvor velfærd, bolig, klima og kultur sikres som fælles goder.
+</p>
+
+<p class="intro-text">
+  <strong>Hvorfor stiller vi op?</strong>
+</p>
+
+<p class="intro-text">
+  Fordi byens udvikling alt for længe er blevet styret af kapitalinteresser,
+  udviklere og spekulanter frem for københavnernes behov. Lejere presses ud,
+  velfærden udhules, og borgernes indflydelse på byens fremtid bliver mindre
+  og mindre.
+</p>
+
+<p class="intro-text">
+  For os handler kommunalpolitik om det helt konkrete: skoler og daginstitutioner,
+  boliger, sundhedstilbud, grønne områder, ældrepleje og en by, hvor alle kan leve
+  et godt liv.
+</p>
+
+<p class="intro-text">
+  Kommunistisk Parti stiller op for at give stemme til de mange, hvis hverdag
+  i dag underlægges profitlogik. Vi vil kæmpe for billige og almene boliger,
+  stærk offentlig velfærd, grønne byrum – og et København, hvor fællesskab og
+  solidaritet er grundlaget, ikke markedets jagt på kortsigtet gevinst.
+</p>
+
+    </div>
+
+    <!-- Right column -->
+    <nav class="header-nav">
       <a href="#demokrati">Demokrati</a>
       <a href="#okonomi">Kommunens Økonomi</a>
       <a href="#bolig">Bolig & Byudvikling</a>
@@ -156,15 +345,15 @@
       <a href="#klimasikring">Klimasikring</a>
       <a href="#velfaerd">Velfærd</a>
       <a href="#kultur">Kultur & Fritid</a>
-      <a href="#arbejdsmarkedet">Arbejdsmarkedet & Faglig Kamp</a>  
+      <a href="#arbejdsmarkedet">Arbejdsmarkedet</a>  
       <a href="#solidaritet">Global Solidaritet</a>
       <a href="#digitalisering">Digitalisering</a>
       <a href="#diverse">Diverse</a>
-      <a href="#omkp">Om Kommunistisk Parti</a>
       <a href="#kandidater">Kandidater</a>
-
     </nav>
-  </header>
+  </div>
+</header>
+
 
 
   <div class="parallax">
@@ -380,6 +569,8 @@ Når Københavns Kommune hjælper ledige borgere i job, skal det ske med værdig
       <h2 class="section-title">Global Solidaritet</h2>
   <p>København skal være en by, der tør tage globalt ansvar. Vi støtter fred, retfærdighed og international solidaritet – både i investeringer og politik.</p>
     <ol>
+      <li><strong>Venskabsbyaftale med Gaza</strong><br>
+Københavns Kommune skal have en venskabsbyaftale med Gaza. En venskabsbyaftale vil være et klart signal om, at vores by ikke vender blikket væk fra folkemordet. Men det skal ikke bare være symbolpolitik. Venskabsbyaftalen skal forpligte København til at hjælpe med genopbygningen af Gaza, samt anerkende og styrke de kulturelle og politiske forbindelser der er mellem københavnerne og palæstinenserne!</li>
       <li><strong>Boykot af Israel</strong><br>
 Kommunistisk Parti vil arbejde for, at København bliver et fyrtårn for international solidaritet. Københavns Kommune skal være en aktiv stemme for global retfærdighed. Derfor siger vi nej til kommunale investeringer i virksomheder, der tjener på krig og undertrykkelse, og vi vil sikre en politik, der fremmer et frit Palæstina og støtter globale arbejderkampe.      </li>
       <li><strong>Invester i fred – ikke i krig</strong><br>
@@ -414,17 +605,6 @@ Ved at integrere kunstig intelligens i administrative opgaver kan kommunen øge 
     </section>
   </div>
 
-    <div class="parallax">
-    <section id="omkp">
-      <h2 class="section-title">Om Kommunistisk Parti</h2>
-<p>Kommunistisk Parti er et arbejderparti, der kæmper for fællesskab, solidaritet og reel demokrati. Vi står på arbejderklassens side i kampen mod ulighed, privatisering og den stigende udbytning, som præger vores samfund. Vi ønsker et København og et Danmark, hvor menneskers behov går forud for profit, og hvor velfærd, bolig, klima og kultur sikres som fælles goder.</p>
-      <ol>
-    <strong>Hvorfor vi stiller op</strong><br>
-      Vi stiller op til kommunalvalget, fordi byens udvikling alt for længe er blevet styret af kapitalinteresser, udviklere og spekulanter frem for borgernes behov. Lejere presses ud, velfærden udhules, og almindelige københavnere har mindre og mindre at skulle have sagt i de beslutninger, der former deres hverdag. Kommunalpolitik handler om helt konkrete forhold: skoler og daginstitutioner, boliger, sundhedstilbud, grønne områder, ældrepleje og en by, hvor alle kan leve et godt liv.
-Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at deres hverdag underlægges profitlogik. Vi vil kæmpe for billige og almene boliger, stærk offentlig velfærd, grønne byrum og et København, hvor fællesskab og solidaritet er grundlaget – ikke markedets jagt på kortsigtet gevinst.    </li>
-  </ol>
-    </section>
-  </div>
 
 <div class="social-float">
   <a href="https://www.facebook.com/kbh.kommunister.dk" target="_blank">
@@ -487,10 +667,7 @@ Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at de
     <div class="image-item">
       <img src="2. Jan.png" alt="Jan" onclick="toggleText('txt2')" />
       <div class="name-tag">Jan</div>
-      <div id="txt2" class="image-text">
-        Jeg er pensionist og har arbejdet på B&W skibsværft som skibsbygger og i fagforeningerne RBF og 3F København som faglig sekretær. Jeg er formand for Sydhavnens Venner, sidder i lokaludvalget for Kgs. Enghave og i bestyrelsen for BK Frem Oldboys. Jeg er en københavnerdreng, der elsker mangfoldigheden i byen – især Sydhavnen, som er et arbejderkvarter med stærke fællesskaber tæt på naturen. Jeg stiller op, fordi jeg er træt af den nuværende udvikling i byen, og jeg vil gøre en forskel for københavnerne. Københavnerne skal bestemme over byen og dens udvikling i dagligdagen og ikke engang hver 4 år og  fordi jeg er træt at den nuværende udvikling og flertallet af de politikere der sidder i BR. København er for mennesker og natur og ikke profit.
-        
-      </div>
+      <div id="txt2" class="image-text">Jeg er pensionist og har arbejdet på B&W skibsværft som skibsbygger og i fagforeningerne RBF og 3F København som faglig sekretær. Jeg er formand for Sydhavnens Venner, sidder i lokaludvalget for Kgs. Enghave og i bestyrelsen for BK Frem Oldboys. Jeg er en københavnerdreng, der elsker mangfoldigheden i byen – især Sydhavnen, som er et arbejderkvarter med stærke fællesskaber tæt på naturen. Jeg stiller op, fordi jeg er træt af den nuværende udvikling i byen, og jeg vil gøre en forskel for københavnerne. Københavnerne skal bestemme over byen og dens udvikling i dagligdagen og ikke engang hver 4 år og  fordi jeg er træt at den nuværende udvikling og flertallet af de politikere der sidder i BR. København er for mennesker og natur og ikke profit.</div>
     </div>
 
     <!-- 3: Rosa -->
@@ -511,13 +688,7 @@ Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at de
     <div class="image-item">
       <img src="5. Kris.png" alt="Kris" onclick="toggleText('txt5')" />
       <div class="name-tag">Kris</div>
-      <div id="txt5" class="image-text">
-        Jeg er bestyrelsesmedlem i Døveforeningen af 1866 siden december 2024, bestyrelsesmedlem af Tegnbuen (LGBT+ forening for tegnsprogsbrugere) siden maj 2025. Har også tidligere haft andre bestyrelsesposter.
-        Jeg engagerer mig i forenings- og bestyrelsesarbejde, fordi jeg gerne vil give noget tilbage til de fællesskaber,
-        jeg selv er en del af. Det, jeg især sætter pris på ved København, er den store døvemiljø med dens stolte døvehistorie.
-        Jeg valgte at flytte hertil, fordi flest døve i Danmark bor der, og det giver bedre sociale muligheder og fællesskab.
-        Men jeg er siden da kommet til at sætte pris på byens rige historie, som afspejles i bygninger, gader og pladser.
-      </div>
+      <div id="txt5" class="image-text">Jeg er queer, døvblind og autist. Selvom at jeg er førtidspensionist, har jeg stadige travlt med livet, hvor jeg er blandt andet en HF-student. Derudover er jeg aktivt i mit politiske arbejde hvor jeg sidder som afdelingsledelsen Kommunistisk Parti KBH Nordvest og som bestyrelsesmedlem i Døveforeningen af 1866. Jeg stiller op til kommunalvalget, fordi København skal have plads til alle - også mennesker med handicap. København skal tage ansvar for at sikre tilgængelighed, den rette hjælp og rigtig indsats med det sammen til deres borgere med handicap, psykiske lidelser eller sociale udfordringer.</div>
     </div>
 
     <!-- 6: Hans -->
@@ -554,7 +725,13 @@ Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at de
       <div class="name-tag">Alma</div>
       <div id="txt10" class="image-text">Jeg er sygeplejerstuderende og der ud over engageret i kultur- og fritidslivet, fordi jeg mener, at alle skal have adgang til musik, sport og fællesskab – uanset indkomst. jeg brænder også for klima og miljø, og for mig hænger kampen for social retfærdighed og grøn omstilling uløseligt sammen. Vi må sige stop for overflødigt byggeri, for gentrificering og for naturødelæggende projekter som Lynetteholmen. København skal udvikles på fællesskabets og naturens præmisser.</div>
     </div>
-  </div>
+
+    <!-- 11: Bager -->
+    <div class="image-item">
+      <img src="11. Bager.png" alt="Bager" onclick="toggleText('txt11')" />
+      <div class="name-tag">Bager</div>
+      <div id="txt11" class="image-text">Jeg er sygeplejerstuderende og der ud over engageret i kultur- og fritidslivet, fordi jeg mener, at alle skal have adgang til musik, sport og fællesskab – uanset indkomst. jeg brænder også for klima og miljø, og for mig hænger kampen for social retfærdighed og grøn omstilling uløseligt sammen. Vi må sige stop for overflødigt byggeri, for gentrificering og for naturødelæggende projekter som Lynetteholmen. København skal udvikles på fællesskabets og naturens præmisser.</div>
+    </div>
 
   <script>
     function toggleText(id) {
@@ -580,4 +757,3 @@ Kommunistisk Parti stiller op for at give stemme til de mange, som oplever at de
 
 </body>
 </html>
-
