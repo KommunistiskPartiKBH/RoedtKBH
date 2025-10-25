@@ -16,7 +16,7 @@
       --star-yellow: #FFC72C;
       --black: #000000;
       --sun-yellow: #FFB100;
-      --leaf-green: #6BA539;
+      --leaf-green: #6f944489;
     }
 
     .intro-text {
@@ -46,10 +46,54 @@
   }
 
   .header-logo img {
-    width: 400px;   /* increase logo size */
+    width: 600px;   /* increase logo size */
     max-width: 90%; /* keep it responsive on smaller screens */
     height: auto;
   }
+
+/* ===== Grøn bannerlinje under logo ===== */
+.banner-band {
+  width: 100%;
+  background-color: var(--leaf-green);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.banner-logo {
+  height: 60px;          /* justér størrelsen her */
+  width: auto;
+  margin-right: 0.5rem;    /* afstand mellem logo og tekst */
+}
+
+.banner-text {
+  font-family: 'Roboto';
+  white-space: nowrap;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 1px;
+}
+
+/* Responsiv tilpasning på mobil */
+@media (max-width: 768px) {
+  .banner-band {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .banner-logo {
+    height: 32px;
+    margin-right: 0.6rem;
+  }
+
+  .banner-text {
+    font-size: 1.5rem;
+  }
+}
 
     h1 {
       font-family: 'Montserrat', sans-serif;
@@ -152,56 +196,6 @@
   display: none;   /* all candidate texts hidden by default */
 }
 
-header {
-  background-color: var(--campaign-green);
-  padding: 2rem;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 3rem;
-}
-
-.header-left {
-  flex: 1;
-  text-align: center; /* centers logo, h1, and text */
-}
-
-.header-left img {
-  width: 300px;       /* make logo larger (adjust as needed) */
-  max-width: 100%;    /* prevent overflow on small screens */
-  margin: 0 auto 1rem;
-  display: block;
-}
-
-.header-left h1 {
-  color: var(--party-red);
-  margin-bottom: 1rem;
-}
-
-.header-left .intro-text {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  max-width: 400px;
-  margin: 0 auto 1.2rem;   /* top 0, left/right auto, bottom 1.2rem */
-}
-.header-left .intro-text:last-child {
-  margin-bottom: 0;        /* optional: no extra space after the last paragraph */
-}
-
-
-.header-nav {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
 /* ===== Header layout (desktop first) ===== */
 header {
   background-color: var(--campaign-green);
@@ -220,13 +214,6 @@ header {
 .header-left {
   flex: 1;
   text-align: left;      /* center logo + text box */
-}
-
-.header-left img {
-  width: 300px;            /* bigger logo */
-  max-width: 100%;
-  display: block;
-  margin: 0 auto 1rem;
 }
 
 .header-left h1 {
@@ -285,6 +272,27 @@ header {
   }
 }
 
+.logo-line {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;       /* lidt mindre afstand */
+  line-height: 1;    /* så logoet flugter med teksten */
+}
+
+.inline-logo {
+  width: 75px;       /* lille, diskret logo */
+  height: auto;
+  margin-right: 0.2rem;
+}
+.header-left h1.logo-line {
+  margin-left: 0.5rem;   /* justér fx til 0.8rem eller 1rem efter smag */
+}
+.header-left h1.logo-line {
+  margin-left: 0.5rem;   /* justér fx til 0.8rem eller 1rem efter smag */
+}
+
+
+
 </style>
 </head>
 <body>
@@ -295,10 +303,14 @@ header {
     <img src="logo.png" alt="logo">
   </div>
 
+  <div class="banner-band">
+  <img src="XvedR.png" alt="X ved liste R" class="banner-logo">
+  <span class="banner-text">KOMMUNISTISK PARTI</span>
+</div>
+
   <div class="header-container">
     <!-- Left column -->
     <div class="header-left">
-      <h1>Kommunistisk Parti</h1>
 <p class="intro-text">
   Kommunistisk Parti er et arbejderparti, der kæmper for fællesskab, solidaritet
   og ægte demokrati. Vi står på arbejderklassens side i kampen mod ulighed,
@@ -429,7 +441,7 @@ header {
     <div class="image-item">
       <img src="5. Kris.png" alt="Kris" onclick="toggleText('txt5')" />
       <div class="name-tag">Kris Rønne</div>
-      <div id="txt5" class="image-text">Jeg er queer, døvblind og autist. Selvom at jeg er førtidspensionist, har jeg stadige travlt med livet, hvor jeg er blandt andet en HF-student. Derudover er jeg aktivt i mit politiske arbejde hvor jeg sidder som afdelingsledelsen Kommunistisk Parti KBH Nordvest og som bestyrelsesmedlem i Døveforeningen af 1866. Jeg stiller op til kommunalvalget, fordi København skal have plads til alle - også mennesker med handicap. København skal tage ansvar for at sikre tilgængelighed, den rette hjælp og rigtig indsats med det sammen til deres borgere med handicap, psykiske lidelser eller sociale udfordringer.</div>
+      <div id="txt5" class="image-text">Jeg er queer, døvblind og autist. Selvom jeg er førtidspensionist, har jeg stadig travlt med livet, hvor jeg har et skånejob hos Rema1000 og er samtidig HF-student. Derudover er jeg aktiv i mit politiske arbejde, hvor jeg sidder som afdelingsledelsen Kommunistisk Parti KBH Nordvest og som bestyrelsesmedlem i Døveforeningen af 1866. Jeg stiller op til kommunalvalget, fordi København skal have plads til alle - også mennesker med handicap. København skal tage ansvar for at sikre tilgængelighed, den rette hjælp og rigtig indsats med det samme til borgere med handicap, psykiske lidelser eller sociale udfordringer.</div>
     </div>
 
     <!-- 6: Hans -->
@@ -783,8 +795,10 @@ Ved at integrere kunstig intelligens i administrative opgaver kan kommunen øge 
     <section id="valgforbund">
       <h2 class="section-title">Valgforbund</h2>
     <strong>Kommunistisk Parti indgår i et rødt, grønt og mangfoldigt valgforbund</strong><br>
-    <p>Kommunistisk Parti har besluttet at indgå teknisk valgforbund med De Frie Grønne, DKP og Hampepartiet til kommunalvalget i 2025. Vi står sammen for at udfordre et system, hvor prestigeprojekter, spekulation og nedskæringer går forud for almindelige københavneres behov. På rådhuset er der bred enighed om budgetloven og de rammer, der hvert år lægger loft over velfærden – en kurs vi sammen vil bryde.</p>
-    <p>Selv om partierne har forskellige mærkesager, er vi enige om centrale krav: stop for ghettoloven, bryd budgetloven, nej til privatisering, beskyttelse af Christiania, kolonihaver og småhavne,legalisering af cannabis samt et klart nej til Lynetteholm og byggeri på Amager Fælled. Vi står skulder ved skulder for et rødt, grønt og mangfoldigt København og forpligter os til at samarbejde både under og efter valget, så flere kritiske stemmer kan blive hørt.</p>
+    <p>Kommunistisk Parti har besluttet at indgå teknisk valgforbund med De Frie Grønne, DKP, Hampepartiet, KaosTV, Solidarisk Integritet og Skamløse Demokrater til kommunalvalget i 2025. Vi står sammen for at udfordre et system, hvor prestigeprojekter, spekulation og nedskæringer går forud for almindelige københavneres behov. På rådhuset er der bred enighed om budgetloven og de rammer, der hvert år lægger loft over velfærden – en kurs vi sammen vil bryde.</p>
+    <p>Selv om partierne har forskellige mærkesager, er vi enige om centrale krav: stop for ghettoloven, bryd budgetloven, nej til privatisering, beskyttelse af Christiania, kolonihaver og småhavne,legalisering af cannabis samt et klart nej til Lynetteholm og byggeri på Amager Fælled. Vi står skulder ved skulder for et rødt, grønt og mangfoldigt København og forpligter os til at samarbejde både under og efter valget, så flere kritiske stemmer kan blive hørt.
+      Valgforbundet står med sikkerhed til at få mindst én plads i Københavns Borgerrepræsentation, så der er ingen risiko for stemmespild ved at stemme på os eller et af de andre partier i valgforbundet.
+    </p>
     </section>
   </div>
 
@@ -803,4 +817,3 @@ Har du spørgsmål til finansiering eller indhold, kan du kontakte os på: kbh@k
 
 </body>
 </html>
-
